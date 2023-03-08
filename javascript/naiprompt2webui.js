@@ -135,7 +135,7 @@ function onClickConvert() {
   historyBox.push(prompt.value);
   result = convert(prompt.value);
   if (result.length != 0) {
-    if (result.match(/^masterpiece, best quality,/) == null) {
+    if (result.match(/^((masterpiece, best quality, high quality, depth of field, blurred background, foreground focus, cell_shading, illustration, extremely_detailed_wallpaper)),/) == null) {
       result = default_prompt + result;
     }
   }
