@@ -126,9 +126,9 @@ function dispatchInputEvent(target) {
 }
 
 function onClickConvert() {
-  const default_prompt = "masterpiece, best quality,\n";
+  const default_prompt = "((masterpiece, best quality, high quality, depth of field, blurred background, foreground focus, cell_shading, illustration, extremely_detailed_wallpaper)), \n";
   const default_negative =
-    "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name";
+    "(worst quality, low quality:1.4), (depth of field, bokeh, blurry:1.4), (motion lines, motion blur:1.4), (greyscale, monochrome:1.0),  text, title, logo, signature ,watermark ,female pubic hair, wings,multiple views, lowres, bad anatomy, holding flowers, (bad hand), bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name,  large breasts";
 
   let result = "";
   let prompt = gradioApp().querySelector("#txt2img_prompt > label > textarea");
